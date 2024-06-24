@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Creating a simple interest calculator using HTML, CSS, and JS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#aboutpage">About</a>
+            <a href="index.html">Interest Calculator</a>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <br>
+        <h1>Simple Interest Calculator</h1>
+        <p>Easily calculate interest rate.</p> 
+<br>
+    <div class="container">
+        <form id="interest-form">
+            <div class="form-group">
+                <label for="principal">Principal Amount:</label>
+                <input type="number" id="principal" required>
+            </div>
+            <div class="form-group">
+                <label for="rate">Annual Interest Rate (%):</label>
+                <input type="number" id="rate" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="years">Number of Years:</label>
+                <input type="number" id="years" required>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <div class="answer">
+            <label for="answer">Answer:</label>
+            <p id="interest-result"></p>
+            <p id="total-result"></p>
+            </div>        
+        </div>
+    </div>
+    </main>
+    <br>
+    <footer>
+        <p>&copy; Copyright 2024</p>
+      </footer>
+    <script src="index.js"></script>
+</body>
+</html>
